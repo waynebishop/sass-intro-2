@@ -1,0 +1,91 @@
+$brandColor: #e74c3c;
+
+
+nav {
+	background-color: $brandColor;
+
+	img {
+		float: left;
+	}
+
+	li {
+		display: inline-block;
+		a {
+			color: white;
+			text-decoration: none;
+			line-height: 50px;
+		}
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+
+	}	
+}
+
+div {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 10px;
+}
+
+#box1 {
+	background-color: darken($brandColor, 30%)
+}
+
+#box2 {
+	background-color: darken($brandColor, 20%)
+}
+
+#box3 {
+	background-color: darken($brandColor, 10%)
+}
+
+#box4 {
+	background-color: $brandColor;
+}
+
+#box5 {
+	background-color: lighten($brandColor, 10%);
+}
+
+#box6 {
+	background-color: lighten($brandColor, 20%);
+}
+
+#box7 {
+	background-color: lighten($brandColor, 30%);
+}
+
+#box8 {
+	background-color: lighten($brandColor, 40%);
+}
+
+#box9 {
+	background-color: mix($brandColor, blue, 30%);
+}
+
+/* CSS comment will appear in SCSS and CSS file */
+// This is a Sass only comment won't be in CSS, only in SCSS file
+
+#box10 {
+	background-color: transparentize($brandColor, .5);
+	position: relative;
+	right: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
